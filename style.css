@@ -9,6 +9,9 @@ img{
   height: auto;
   max-width: 100px;
 }
+body{
+  background-color: gray;
+  }
 .nome{
   font-family: 'Poppins', serif;
   letter-spacing: 2px;
