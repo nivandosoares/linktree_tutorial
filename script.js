@@ -32,6 +32,6 @@ fetch("https://api.pexels.com/v1/photos/1257860",{
    })
    .then(data => {
     // console.log(data)
- //   document.body.style.backgroundImage = `url(${data.src.original})`
+   document.body.style.backgroundImage = `url(${data.src.original})`
     
    })
