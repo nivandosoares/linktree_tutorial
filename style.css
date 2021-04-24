@@ -73,5 +73,7 @@ body{
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
+body.bg{
+  object-fit: cover;
+}
 
