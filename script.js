@@ -37,8 +37,3 @@ fetch("https://api.pexels.com/v1/photos/1257860",{
    })
 
 .catch(error => console.error(error))
-
-document.body.style.backgroundPosition = "center center"
-document.body.style.backgroundRepeat = "no-repeat"
-document.body.style.backgroundAtachment = "fixed"
-document.body.style.backgroundSize = "cover"
