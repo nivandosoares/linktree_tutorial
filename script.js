@@ -35,4 +35,4 @@ fetch("https://api.pexels.com/v1/photos/1257860",{
    document.body.style.backgroundImage = `url(${data.src.original})`
     
    })
-document.body.backgroundPosition = "{center center cover no-repeat fixed}"
+document.body.backgroundPosition = "center center"
