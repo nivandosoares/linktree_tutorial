@@ -5,7 +5,9 @@ pexels_api_key = '563492ad6f91700001000001cd666b8c57c94181aca5492e5fe89981'
 async function Get_data_from(url, api_key){
   try{
     response = await fetch(url,{
-      Authorization: api_key
+      headers:{
+        Authorization: api_key
+      }
     })
     return response.json()
   }catch(error){
@@ -45,7 +47,7 @@ async function Get_background_from(url){
 }
 */
 Get_data_from(pexels_background_url, pexels_api_key).then (data => {
- //console.log(data)
+   console.log(data)
    document.body.style.backgroundImage = `url(${data.src.original})`
     
 })
