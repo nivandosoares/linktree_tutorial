@@ -1,39 +1,39 @@
-fetch('https://api.github.com/users/nivandosoares')
+github_user_url = 'https://api.github.com/users/nivandosoares'
+pexels_background_url = 'https://api.pexels.com/v1/photos/1257860'
+pexels_api_key = '563492ad6f91700001000001cd666b8c57c94181aca5492e5fe89981'
 
-.then(response => response.json())
 
-.then(data => {
+async function Get_GithubUser_from(url){
+  try{
+    response = await fetch(url)
+    return response.json()
+  }catch(error){
+    console.log(error)
+  }
+}
 
- 	// console.log(data)
- 	
- 	document.getElementById("avatar").src = data.avatar_url;
+Get_GithubUser_from(github_user_url).then (data => {
+ //console.log(data)
+  document.getElementById("avatar").src = data.avatar_url;
  	document.querySelector('.nome').innerHTML = data.name
  	document.querySelector('.short-info').innerHTML = data.bio
- 	
-     
-
 })
 
-.catch(error => console.error(error))
-
-//alert("burro demais kkkkkkkkk")
-//api_pexels key 563492ad6f91700001000001cd666b8c57c94181aca5492e5fe89981
-//photo id 1257860
-
-
-
-fetch("https://api.pexels.com/v1/photos/1257860",{
-  headers: {
-    Authorization: "563492ad6f91700001000001cd666b8c57c94181aca5492e5fe89981"
+async function Get_background_from(url){
+  try{
+    response = await fetch(url, {
+      headers: {
+        Authorization: pexels_api_key
+      }
+    })
+    return response.json()
+  }catch(error){
+    console.log(error)
   }
-})
-   .then(resp => {
-     return resp.json()
-   })
-   .then(data => {
-    // console.log(data)
+}
+
+Get_background_from(pexels_background_url).then (data => {
+ //console.log(data)
    document.body.style.backgroundImage = `url(${data.src.original})`
     
-   })
-
-.catch(error => console.error(error))
+})
