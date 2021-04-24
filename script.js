@@ -35,7 +35,7 @@ fetch("https://api.pexels.com/v1/photos/1257860",{
    document.body.style.backgroundImage = `url(${data.src.original})`
     
    })
-document.body.backgroundPosition = "center center"
-document.body.backgroundRepeat = "no-repeat"
-document.body.backgroundAtachment = "fixed"
-document.body.backgroundSize = "cover"
+document.body.style.backgroundPosition = "center center"
+document.body.style.backgroundRepeat = "no-repeat"
+document.body.style.backgroundAtachment = "fixed"
+document.body.style.backgroundSize = "cover"
