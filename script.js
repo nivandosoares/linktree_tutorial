@@ -36,3 +36,6 @@ fetch("https://api.pexels.com/v1/photos/1257860",{
     
    })
 document.body.backgroundPosition = "center center"
+document.body.backgroundRepeat = "no-repeat"
+document.body.backgroundAtachment = "fixed"
+document.body.backgroundSize = "cover"
