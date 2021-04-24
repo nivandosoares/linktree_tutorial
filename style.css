@@ -71,4 +71,5 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
