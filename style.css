@@ -73,4 +73,7 @@ body{
   background-repeat: no-repeat;
   overflow: hidden;
 }
+body.bg{
+  opacity: .5;
+}
 
