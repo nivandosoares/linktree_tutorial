@@ -65,3 +65,10 @@ a:hover {
   color: white;
   opacity: 0.80;
 }
+body{
+  background-color: black;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
