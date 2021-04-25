@@ -41,14 +41,6 @@ img{
   font-size: 1.5em;
   padding: 30px;
 }
-.switcher{
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: white;
-  transition: color 1s;
-}
 a:hover {
   color: #000;
   background: #fff;
@@ -71,11 +63,6 @@ a:hover {
 }
 body{
   margin: 0;
-  background-color: white;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 canvas {
