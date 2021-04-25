@@ -32,8 +32,8 @@ img{
 }
 
 .change:hover {
-  background: #2196F3;
-  color: white;
+  background: #fff;
+  color: #000;
 }
 .rodape{
   font-family: 'Poppins';
