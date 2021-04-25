@@ -32,11 +32,12 @@ Get_data_from(github_user_url).then (user => {
 })
 
 //fetch the background from pexels 
+/*
 Get_data_from(pexels_background_url, pexels_api_key).then (image => {
    //set it to the background
    document.body.style.backgroundImage = `url(${image.src.original})`
     
-})
+})*/
 /* ---- particles.js config ---- */
 
 particlesJS("particles-js", {
@@ -151,5 +152,5 @@ particlesJS("particles-js", {
 });
 
 
-/* ---- stats.js config ---- */
+
 
