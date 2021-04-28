@@ -57,9 +57,9 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
- 
+  text-decoration: none;
   color: white;
-  opacity: 0.80;
+  
 }
 body{
   margin: 0;
