@@ -40,6 +40,8 @@ Get_data_from(pexels_background_url, pexels_api_key).then (image => {
 })*/
 /* ---- particles.js config ---- */
 
+window.addEventListener('DOMContentLoaded', (event) => {
+
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -150,6 +152,7 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
+}
+);
 
 
