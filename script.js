@@ -1,5 +1,5 @@
 github_user_url = 'https://api.github.com/users/nivandosoares'
-photo_id = '1257860'
+photo_id = '2219429'
 pexels_background_url = `https://api.pexels.com/v1/photos/${photo_id}`
 
 base64_api_key = 'NTYzNDkyYWQ2ZjkxNzAwMDAxMDAwMDAxY2Q2NjZiOGM1N2M5NDE4MWFjYTU0OTJlNWZlODk5ODE='
@@ -32,127 +32,13 @@ Get_data_from(github_user_url).then (user => {
 })
 
 //fetch the background from pexels 
-/*
 Get_data_from(pexels_background_url, pexels_api_key).then (image => {
    //set it to the background
+
    document.body.style.backgroundImage = `url(${image.src.original})`
+   
+   //set the image reference 
+   document.querySelector('.rodape').innerHTML = `<p>This <a href=${image.url}>Photo</a>
+    was taken by <a href=${image.photographer_url}>${image.photographer}</a> on Pexels</p>`
     
-})*/
-/* ---- particles.js config ---- */
-
-window.addEventListener('DOMContentLoaded', (event) => {
-
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 380,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-}
-);
-
-
+})
