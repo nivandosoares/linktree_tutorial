@@ -30,11 +30,7 @@ Get_data_from(github_user_url).then (user => {
  	document.querySelector('.nome').innerHTML = user.name
  	document.querySelector('.short-info').innerHTML = user.bio
     
-     var preview = document.createElement('meta')
-     preview.setAttribute('property', 'og:image')
-     preview.content = user.avatar_url
-     document.getElementsByTagName('head')[0].appendChild(preview)
-
+     
 })
 
 //fetch the background from pexels 
