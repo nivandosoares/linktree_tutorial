@@ -31,6 +31,12 @@ img{
   padding:15px;
   color: white;
   font-size: 13.5px;
+  text-align: justify;
+  width: 500px;
+  padding-left: auto;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;  
 }
 .social-icons{
   text-align: center;
