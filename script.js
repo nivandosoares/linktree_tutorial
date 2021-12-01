@@ -26,9 +26,9 @@ async function Get_data_from(url, api_key){
 //fecth my github profile via github API and get a promise with data
 Get_data_from(github_user_url).then (user => {
   //set the avatar, bio and name 
-    document.getElementById("avatar").src = user.avatar_url
+  document.getElementById("avatar").src = user.avatar_url
  	document.querySelector('.nome').innerHTML = user.name
- 	document.querySelector('.short-info').innerHTML = user.bio
+ 	//document.querySelector('.short-info').innerHTML = user.bio
     
      
 })
