@@ -1,2 +1,2 @@
-# Nivando_linktree-clone
+# My personal card
 Personal website using linktree as example
