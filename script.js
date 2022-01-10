@@ -37,10 +37,10 @@ Get_data_from(github_user_url).then (user => {
 Get_data_from(pexels_background_url, pexels_api_key).then (image => {
    //set it to the background
 
-   document.body.style.backgroundImage = `url(${image.src.original})`
+  // document.body.style.backgroundImage = `url(${image.src.original})`
    
    //set the image reference 
-   document.querySelector('.rodape').innerHTML = `<p>This <a href=${image.url}>Photo</a>
-    was taken by <a href=${image.photographer_url}>${image.photographer}</a> on Pexels</p>`
+   //document.querySelector('.rodape').innerHTML = `<p>This <a href=${image.url}>Photo</a>
+   // was taken by <a href=${image.photographer_url}>${image.photographer}</a> on Pexels</p>`
     
 })
