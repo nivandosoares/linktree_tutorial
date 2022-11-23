@@ -1,4 +1,4 @@
-img {
+img{
   border-radius: 50%;
 }
 #avatar {
@@ -10,37 +10,32 @@ img {
   max-width: 100px;
 }
 
-.nome {
-  font-family: "Poppins", serif;
+.nome{
+  font-family: 'Poppins', serif;
   letter-spacing: 2px;
-  text-align: center;
+  text-align : center;
   font-size: 40px;
-  color: white;
+  color:white;
+  
 }
-.rodape {
-  font-family: "Poppins";
+.rodape{
+  font-family: 'Poppins';
   text-align: center;
   padding: 15px;
   color: white;
 }
-.short-info {
-  font-family: "Poppins";
+.short-info{
+  font-family: 'Poppins';
   text-align: center;
   text-decoration: none;
-  padding: 15px;
+  padding:15px;
   color: white;
   font-size: 13.5px;
-  text-align: center;
-  width: auto;
-  padding-left: auto;
-  padding-right: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
-.social-icons {
+.social-icons{
   text-align: center;
   letter-spacing: 3.5px;
-
+  
   color: white;
   font-size: 1.5em;
   padding: 30px;
@@ -55,7 +50,7 @@ a:hover {
   background: #fff;
 }
 .link {
-  font-family: "Poppins", Sans-Serif;
+  font-family: 'Poppins', Sans-Serif;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -68,11 +63,10 @@ a:hover {
   margin-right: auto;
   color: #000;
   background: #fff;
-  opacity: 0.8;
+  opacity: 0.80;
 }
-body {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+body{
+  background-color: black;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;

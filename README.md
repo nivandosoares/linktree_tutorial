@@ -1,2 +1,4 @@
 # My personal card
-Personal website using linktree as example
+
+A Pen created on CodePen.io. Original URL: [https://codepen.io/nivandosoares/pen/xxqPYQo](https://codepen.io/nivandosoares/pen/xxqPYQo).
+
